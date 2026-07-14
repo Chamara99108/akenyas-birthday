@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root{
+  --pink:#ff5ca8;
+  --purple:#9b5de5;
+  --blue:#55c8ff;
+  --yellow:#ffd84d;
+  --bg:#fff7fb;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  overflow-x:hidden;
+  background:var(--bg);
+  font-family:var(--font-body);
+}
+
+h1,h2,h3{
+  font-family:var(--font-heading);
+}
+
+.gradient-text{
+  background:linear-gradient(90deg,#ff4fa1,#8b5cf6,#4fc3ff);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.glass{
+  backdrop-filter:blur(18px);
+  background:rgba(255,255,255,.35);
+  border:1px solid rgba(255,255,255,.3);
+}
+
+.balloon{
+  border-radius:50%;
+}
+
+@keyframes float{
+  0%{transform:translateY(0px);}
+  50%{transform:translateY(-25px);}
+  100%{transform:translateY(0px);}
+}
+
+.float{
+  animation:float 5s ease-in-out infinite;
+}
