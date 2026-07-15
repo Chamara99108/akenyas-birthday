@@ -9,16 +9,16 @@ import Sparkles from "../effects/Sparkles";
 
 
 
-export default function Hero(){
+export default function Hero() {
 
 
-return (
+    return (
 
-<section
+        <section
 
-id="home"
+            id="home"
 
-className="
+            className="
 relative
 flex
 min-h-screen
@@ -26,46 +26,46 @@ items-center
 justify-center
 overflow-hidden
 bg-gradient-to-br
-from-pink-100
-via-purple-100
-to-blue-100
+from-pink-50
+via-purple-50
+to-rose-50
 px-6
 "
 
->
+        >
 
 
-<FloatingBalloons/>
+            <FloatingBalloons />
 
-<Sparkles/>
-
-
+            <Sparkles />
 
 
-<div className="
+
+
+            <div className="
 z-10
 text-center
 "
->
+            >
 
 
-<motion.div
+                <motion.div
 
-initial={{
-scale:.8,
-opacity:0
-}}
+                    initial={{
+                        scale: .8,
+                        opacity: 0
+                    }}
 
-animate={{
-scale:1,
-opacity:1
-}}
+                    animate={{
+                        scale: 1,
+                        opacity: 1
+                    }}
 
-transition={{
-duration:1
-}}
+                    transition={{
+                        duration: 1
+                    }}
 
-className="
+                    className="
 mx-auto
 mb-8
 relative
@@ -78,73 +78,97 @@ border-white
 shadow-2xl
 "
 
->
+                >
 
 
-<Image
+                    <Image
 
-src="/images/akenya.jpg"
+                        src="/images/akenya.jpg"
 
-alt="Akenya"
+                        alt="Akenya"
 
-fill
+                        fill
 
-className="
+                        className="
 object-cover
 "
 
-/>
+                    />
 
 
-</motion.div>
+                </motion.div>
+                <motion.p
+                    initial={{
+                        y: 30,
+                        opacity: 0
+                    }}
+                    animate={{
+                        y: 0,
+                        opacity: 1
+                    }}
+                    transition={{
+                        delay: 0.3,
+                        duration: 0.8
+                    }}
+                    className="
+font-fancy
+text-4xl
+text-rose-400
+mb-2
+"
+                >
+                    ✨ You are invited to ✨
+                </motion.p>
 
 
 
 
 
-<motion.h1
+                <motion.h1
 
-initial={{
-y:50,
-opacity:0
-}}
+                    initial={{
+                        y: 50,
+                        opacity: 0
+                    }}
 
-animate={{
-y:0,
-opacity:1
-}}
+                    animate={{
+                        y: 0,
+                        opacity: 1
+                    }}
 
-className="
+                    className="
 text-6xl
 font-black
-gradient-text
+shimmer-text
 "
 
->
+                >
 
-Akenya Turns One 🎂
+                    Akenya Turns One 🎂
 
-</motion.h1>
-
-
+                </motion.h1>
 
 
 
-<p className="
+
+
+                <p className="
 mt-5
 text-xl
-text-gray-600
+text-purple-700/70
+font-fancy
+text-2xl
 ">
 
-Join us to celebrate our little princess's
-first birthday ❤️
+                    Join us to celebrate our little princess&apos;s
+                    first birthday ❤️
 
-</p>
-
-
+                </p>
 
 
-<div className="
+
+
+                <div className="
 mt-8
 flex
 flex-wrap
@@ -153,42 +177,46 @@ gap-4
 ">
 
 
-<div className="
+                    <div className="
 rounded-full
 bg-white/70
 px-8
 py-3
 shadow
+border
+border-pink-200/50
 ">
 
-📅 September 05
+                        📅 September 05
 
-</div>
+                    </div>
 
 
-<div className="
+                    <div className="
 rounded-full
 bg-white/70
 px-8
 py-3
 shadow
+border
+border-pink-200/50
 ">
 
-🏠 At Home
+                        🏠 At Home
 
-</div>
-
-
-</div>
+                    </div>
 
 
-
-</div>
+                </div>
 
 
 
-</section>
+            </div>
 
-);
+
+
+        </section>
+
+    );
 
 }

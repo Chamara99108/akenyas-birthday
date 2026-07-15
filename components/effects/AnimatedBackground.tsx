@@ -12,7 +12,7 @@ const blobs = [
   },
   {
     size: "w-[450px] h-[450px]",
-    color: "bg-sky-300/40",
+    color: "bg-rose-300/40",
     top: "bottom-0",
     left: "right-0",
     duration: 16,

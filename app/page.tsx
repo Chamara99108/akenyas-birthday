@@ -8,38 +8,41 @@ import Wishes from "@/components/sections/Wishes";
 import MusicPlayer from "@/components/effects/MusicPlayer";
 import Confetti from "@/components/effects/Confetti";
 import WhatsAppButton from "@/components/effects/WhatsAppButton";
+import FloatingBalloons from "@/components/effects/FloatingBalloons";
+import MagicalBackground from "@/components/effects/MagicalBackground";
 
 
-export default function Home(){
+export default function Home() {
 
-return (
+    return (
 
-<main>
+        <main>
+            <MagicalBackground />
+            <FloatingBalloons />
+
+            <Confetti />
+
+            <MusicPlayer />
 
 
-<Confetti />
+            <Navbar />
 
-<MusicPlayer />
+            <Hero />
 
+            <Countdown />
 
-<Navbar />
+            <EventCard />
 
-<Hero />
+            <Gallery />
 
-<Countdown />
+            <Timeline />
 
-<EventCard />
+            <Wishes />
 
-<Gallery />
+            <WhatsAppButton />
 
-<Timeline />
+        </main>
 
-<Wishes />
-
-<WhatsAppButton />
-
-</main>
-
-);
+    );
 
 }

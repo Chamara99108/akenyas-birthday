@@ -1,50 +1,86 @@
 @import "tailwindcss";
 
-:root{
-  --pink:#ff5ca8;
-  --purple:#9b5de5;
-  --blue:#55c8ff;
-  --yellow:#ffd84d;
-  --bg:#fff7fb;
+:root {
+  --pink: #ff5ca8;
+  --purple: #9b5de5;
+  --gold: #d4a843;
+  --rose: #e8739e;
+  --yellow: #ffd84d;
+  --bg: linear-gradient(135deg, #fff0f6 0%, #fce4f3 25%, #f3e8ff 50%, #fef3f0 75%, #fff5f9 100%);
 }
 
-html{
-  scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-  margin:0;
-  overflow-x:hidden;
-  background:var(--bg);
-  font-family:var(--font-body);
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--bg);
+  font-family: var(--font-body), 'Quicksand', sans-serif;
+  color: #4a3050;
+  letter-spacing: 0.01em;
 }
 
-h1,h2,h3{
-  font-family:var(--font-heading);
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading), 'Cinzel Decorative', serif;
+  color: #6b2d7b;
 }
 
-.gradient-text{
-  background:linear-gradient(90deg,#ff4fa1,#8b5cf6,#4fc3ff);
-  -webkit-background-clip:text;
-  color:transparent;
+.gradient-text {
+  background: linear-gradient(90deg, #e8579a, #9b5de5, #d4a843);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
-.glass{
-  backdrop-filter:blur(18px);
-  background:rgba(255,255,255,.35);
-  border:1px solid rgba(255,255,255,.3);
+.glass {
+  backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, .35);
+  border: 1px solid rgba(255, 255, 255, .3);
 }
 
-.balloon{
-  border-radius:50%;
+.font-fancy {
+  font-family: var(--font-fancy), 'Great Vibes', cursive;
 }
 
-@keyframes float{
-  0%{transform:translateY(0px);}
-  50%{transform:translateY(-25px);}
-  100%{transform:translateY(0px);}
+.balloon {
+  border-radius: 50%;
 }
 
-.float{
-  animation:float 5s ease-in-out infinite;
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-25px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float {
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg, #e8579a, #d4a843, #9b5de5, #e8579a);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shimmer 4s linear infinite;
 }

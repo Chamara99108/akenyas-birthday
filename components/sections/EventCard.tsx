@@ -20,7 +20,7 @@ export default function EventCard() {
 
           <div className="text-center">
 
-            <Calendar className="mx-auto mb-3 text-pink-500" size={45}/>
+            <Calendar className="mx-auto mb-3 text-pink-500" size={45} />
 
             <h3 className="font-bold">
 
@@ -32,7 +32,7 @@ export default function EventCard() {
 
           <div className="text-center">
 
-            <Clock className="mx-auto mb-3 text-purple-500" size={45}/>
+            <Clock className="mx-auto mb-3 text-purple-500" size={45} />
 
             <h3>
 
@@ -44,7 +44,7 @@ export default function EventCard() {
 
           <div className="text-center">
 
-            <MapPin className="mx-auto mb-3 text-sky-500" size={45}/>
+            <MapPin className="mx-auto mb-3 text-rose-400" size={45} />
 
             <h3>
 

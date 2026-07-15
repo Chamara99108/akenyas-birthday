@@ -11,8 +11,8 @@ export default function Navbar() {
 
           <Cake className="text-pink-500" />
 
-          <span className="text-xl font-bold text-pink-600">
-            Akenya
+          <span className="text-2xl font-bold text-pink-600 font-fancy">
+            👑 Akenya
           </span>
 
         </div>
