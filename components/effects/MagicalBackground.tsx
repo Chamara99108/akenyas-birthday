@@ -195,7 +195,6 @@
 // }
 
 
-
 "use client";
 
 import Image from "next/image";
@@ -205,37 +204,33 @@ const decorations = [
   {
     src: "/images/princess1.png",
     alt: "Princess",
-    left: "2%",
-    top: "8%",
-    width: 180,
-    height: 180,
+    left: "-5%",
+    top: "12%",
+    size: "clamp(90px, 18vw, 220px)",
     duration: 6,
   },
   {
     src: "/images/princess2.png",
     alt: "Fairy Princess",
-    right: "2%",
-    top: "10%",
-    width: 170,
-    height: 170,
+    right: "-5%",
+    top: "15%",
+    size: "clamp(90px, 18vw, 220px)",
     duration: 7,
   },
   {
     src: "/images/castle.png",
     alt: "Castle",
-    left: "3%",
-    bottom: "3%",
-    width: 220,
-    height: 220,
+    left: "-5%",
+    bottom: "5%",
+    size: "clamp(110px, 22vw, 260px)",
     duration: 9,
   },
   {
     src: "/images/princess1.png",
     alt: "Princess",
-    right: "2%",
-    bottom: "3%",
-    width: 190,
-    height: 190,
+    right: "-5%",
+    bottom: "8%",
+    size: "clamp(100px, 20vw, 230px)",
     duration: 8,
     flip: true,
   },
@@ -243,17 +238,36 @@ const decorations = [
 
 export default function MagicalBackground() {
   return (
-    <div className="pointer-events-none fixed inset-0 overflow-hidden z-0">
-      {/* Soft Glow */}
-      <div className="absolute inset-0 bg-gradient-to-br from-pink-100/20 via-purple-100/10 to-yellow-100/20" />
+    <div
+      className="
+        pointer-events-none
+        fixed
+        inset-0
+        overflow-hidden
+        z-0
+      "
+    >
 
-      {/* Decorations */}
+      {/* Soft Princess Theme Glow */}
+      <div
+        className="
+          absolute
+          inset-0
+          bg-gradient-to-br
+          from-pink-100/30
+          via-purple-100/20
+          to-yellow-100/20
+        "
+      />
+
+
+      {/* Floating Decorations */}
       {decorations.map((item, index) => (
         <motion.div
           key={index}
           animate={{
             y: [0, -15, 0],
-            rotate: [0, 2, -2, 0],
+            rotate: [0, 3, -3, 0],
           }}
           transition={{
             duration: item.duration,
@@ -262,31 +276,44 @@ export default function MagicalBackground() {
           }}
           style={{
             position: "absolute",
+
             left: item.left,
             right: item.right,
             top: item.top,
             bottom: item.bottom,
-            width: item.width,
-            height: item.height,
+
+            width: item.size,
+            height: item.size,
+
             opacity: 0.18,
-            transform: item.flip ? "scaleX(-1)" : undefined,
+
+            transform: item.flip
+              ? "scaleX(-1)"
+              : undefined,
           }}
-          className="hidden lg:block"
         >
           <Image
             src={item.src}
             alt={item.alt}
             fill
-            className="object-contain"
-            sizes="220px"
+            priority
+            className="
+              object-contain
+            "
+            sizes="
+              (max-width:768px) 100px,
+              220px
+            "
           />
         </motion.div>
       ))}
 
-      {/* Sparkles */}
+
+
+      {/* Floating Sparkles */}
       {Array.from({ length: 18 }).map((_, index) => (
         <motion.div
-          key={index}
+          key={`sparkle-${index}`}
           animate={{
             opacity: [0, 0.8, 0],
             scale: [0.5, 1.3, 0.5],
@@ -299,21 +326,27 @@ export default function MagicalBackground() {
           }}
           style={{
             position: "absolute",
-            left: `${Math.random() * 95}%`,
-            top: `${Math.random() * 95}%`,
-            width: 6,
-            height: 6,
-            borderRadius: "9999px",
+
+            left: `${5 + ((index * 43) % 90)}%`,
+            top: `${5 + ((index * 37) % 90)}%`,
+
+            width: 5,
+            height: 5,
+
+            borderRadius: "50%",
+
             background:
               index % 3 === 0
                 ? "#FFD84D"
                 : index % 3 === 1
                 ? "#FF5CA8"
                 : "#9B5DE5",
+
             opacity: 0.5,
           }}
         />
       ))}
+
     </div>
   );
 }
