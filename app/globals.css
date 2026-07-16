@@ -1,18 +1,45 @@
 @import "tailwindcss";
 
-:root {
+/* :root {
   --pink: #ff5ca8;
   --purple: #9b5de5;
   --gold: #d4a843;
   --rose: #e8739e;
   --yellow: #ffd84d;
   --bg: linear-gradient(135deg, #fff0f6 0%, #fce4f3 25%, #f3e8ff 50%, #fef3f0 75%, #fff5f9 100%);
+} */
+
+:root {
+  --pink: #ff5ca8;
+  --pink-light: #ffd6eb;
+
+  --purple: #9b5de5;
+  --purple-light: #efe5ff;
+
+  --gold: #d4a843;
+  --gold-light: #fff3cf;
+
+  --rose: #ff85b3;
+
+  --text: #6d3d70;
+
+  --bg: linear-gradient(135deg,
+      #fff5fa 0%,
+      #f5d1e9 25%,
+      #f4ebff 55%,
+      #fff5ec 100%);
 }
+
+
+
+
+
 
 html {
   scroll-behavior: smooth;
 }
 
+/* 
 body {
   margin: 0;
   overflow-x: hidden;
@@ -83,4 +110,28 @@ h3 {
   -webkit-background-clip: text;
   color: transparent;
   animation: shimmer 4s linear infinite;
+}
+ */
+
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--bg);
+  font-family: var(--font-body), sans-serif;
+  color: #5b3b5c;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading), cursive;
+}
+
+.font-heading {
+  font-family: var(--font-heading), cursive;
+}
+
+.font-body {
+  font-family: var(--font-body), sans-serif;
 }
