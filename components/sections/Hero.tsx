@@ -260,6 +260,69 @@ export default function Hero() {
             <FloatingBalloons />
             <Sparkles />
 
+{/* ===================================================================================== */}
+
+            {/* Left Princess */}
+<motion.div
+  className="absolute left-2 top-24 z-0 md:left-8 md:top-28"
+  animate={{ y: [0, -12, 0] }}
+  transition={{ duration: 6, repeat: Infinity }}
+>
+  <Image
+    src="/images/princess1.png"
+    alt="Princess"
+    width={90}
+    height={90}
+    className="object-contain md:w-[180px] md:h-[180px]"
+  />
+</motion.div>
+
+{/* Right Princess */}
+<motion.div
+  className="absolute right-2 top-24 z-0 md:right-8 md:top-32"
+  animate={{ y: [0, -15, 0] }}
+  transition={{ duration: 7, repeat: Infinity }}
+>
+  <Image
+    src="/images/princess2.png"
+    alt="Princess"
+    width={90}
+    height={90}
+    className="object-contain md:w-[180px] md:h-[180px]"
+  />
+</motion.div>
+
+{/* Bottom Left Castle */}
+<motion.div
+  className="absolute bottom-4 left-2 z-0 md:bottom-6 md:left-10"
+  animate={{ y: [0, -8, 0] }}
+  transition={{ duration: 8, repeat: Infinity }}
+>
+  <Image
+    src="/images/castle.png"
+    alt="Castle"
+    width={120}
+    height={120}
+    className="object-contain md:w-[240px] md:h-[240px]"
+  />
+</motion.div>
+
+{/* Bottom Right Princess */}
+<motion.div
+  className="absolute bottom-6 right-2 z-0 md:bottom-8 md:right-10"
+  animate={{ y: [0, -12, 0] }}
+  transition={{ duration: 7, repeat: Infinity }}
+>
+  <Image
+    src="/images/princess1.png"
+    alt="Princess"
+    width={100}
+    height={100}
+    className="object-contain scale-x-[-1] md:w-[190px] md:h-[190px]"
+  />
+</motion.div>
+{/* ======================================================================================================= */}
+
             <div
                 className="
           z-10
