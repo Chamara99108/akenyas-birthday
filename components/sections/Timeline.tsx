@@ -14,7 +14,7 @@ const moments = [
   {
     icon: Baby,
     title: "Welcome To The World",
-    date: "September 2025",
+    date: "31st of August 2025",
     description:
       "The day our little princess Akenya came into our lives and filled our hearts with love.",
   },
@@ -37,12 +37,12 @@ const moments = [
     title: "First Steps",
     date: "New Adventures",
     description:
-      "Small steps that created the biggest memories.",
+      "Small steps that created the biggest memories. World is yours",
   },
   {
     icon: Cake,
     title: "First Birthday",
-    date: "September 05",
+    date: "31st of August 2026",
     description:
       "Celebrating one amazing year full of love, laughter and memories.",
   },

@@ -4,57 +4,57 @@ import { useState } from "react";
 import { Music, Pause, Play } from "lucide-react";
 
 
-export default function MusicPlayer(){
+export default function MusicPlayer() {
 
-const [playing,setPlaying]=useState(false);
-
-
-const toggleMusic=()=>{
-
-const audio =
-document.getElementById(
-"birthday-audio"
-) as HTMLAudioElement;
+    const [playing, setPlaying] = useState(false);
 
 
-if(playing){
+    const toggleMusic = () => {
 
-audio.pause();
-
-}else{
-
-audio.play();
-
-}
+        const audio =
+            document.getElementById(
+                "birthday-audio"
+            ) as HTMLAudioElement;
 
 
-setPlaying(!playing);
+        if (playing) {
 
-};
+            audio.pause();
 
+        } else {
 
+            audio.play();
 
-return (
-
-<>
-
-
-<audio
-
-id="birthday-audio"
-
-src="/music/birthday.mp3"
-
-loop
-
-/>
+        }
 
 
-<button
+        setPlaying(!playing);
 
-onClick={toggleMusic}
+    };
 
-className="
+
+
+    return (
+
+        <>
+
+
+            <audio
+
+                id="birthday-audio"
+
+                src="/music/nastelbom-happy-birthday-495860.mp3"
+
+                loop
+
+            />
+
+
+            <button
+
+                onClick={toggleMusic}
+
+                className="
 fixed
 bottom-6
 right-6
@@ -75,42 +75,42 @@ hover:scale-110
 transition
 "
 
->
+            >
 
 
-{
+                {
 
-playing
+                    playing
 
-?
+                        ?
 
-<>
+                        <>
 
-<Pause size={20}/>
+                            <Pause size={20} />
 
-Pause
+                            Pause
 
-</>
+                        </>
 
-:
+                        :
 
-<>
+                        <>
 
-<Play size={20}/>
+                            <Play size={20} />
 
-Music
+                            Music
 
-</>
+                        </>
 
-}
-
-
-</button>
+                }
 
 
-</>
+            </button>
 
-);
+
+        </>
+
+    );
 
 
 }

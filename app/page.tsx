@@ -4,8 +4,9 @@ import EventCard from "@/components/sections/EventCard";
 import Gallery from "@/components/sections/Gallery";
 import Timeline from "@/components/sections/Timeline";
 // import Navbar from "@/components/layout/Navbar";
-import Wishes from "@/components/sections/Wishes";
+// import Wishes from "@/components/sections/Wishes";
 import MusicPlayer from "@/components/effects/MusicPlayer";
+// import RsvpButton from "@/components/effects/RsvpButton";
 import Confetti from "@/components/effects/Confetti";
 import WhatsAppButton from "@/components/effects/WhatsAppButton";
 import FloatingBalloons from "@/components/effects/FloatingBalloons";
@@ -15,7 +16,6 @@ import MagicalBackground from "@/components/effects/MagicalBackground";
 export default function Home() {
 
     return (
-
         <main>
             <MagicalBackground />
             <FloatingBalloons />
@@ -37,7 +37,7 @@ export default function Home() {
 
             <Timeline />
 
-            <Wishes />
+            {/* <RsvpButton /> */}
 
             <WhatsAppButton />
 

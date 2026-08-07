@@ -44,8 +44,8 @@ items-center
 gap-2
 rounded-full
 bg-green-500
-px-4
-py-2
+px-6
+py-4
 font-bold
 text-white
 shadow-xl
