@@ -352,7 +352,7 @@ export default function Hero() {
           "
                 >
                     <Image
-                        src="/images/akenya.jpg"
+                        src="/images/akenya2.jpg"
                         alt="Akenya"
                         fill
                         className="object-cover"

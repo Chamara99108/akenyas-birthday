@@ -44,7 +44,7 @@ const moments = [
     title: "First Birthday",
     date: "31st of August 2026",
     description:
-      "Celebrating one amazing year full of love, laughter and memories.",
+      "Celebrating one amazing year full of love, laughter and memories. (event on sep 05)",
   },
 ];
 

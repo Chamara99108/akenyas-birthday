@@ -13,19 +13,19 @@ const photos = [
     title: "Happy Moments",
   },
   {
-    src: "/images/baby3.jpg",
+    src: "/images/smile.jpg",
     title: "Little Smile ❤️",
   },
   {
-    src: "/images/baby4.jpg",
+    src: "/images/Prin.jpg",
     title: "Little Princess",
   },
   {
-    src: "/images/baby5.jpg",
+    src: "/images/baby51.jpg",
     title: "Sweet Memories",
   },
   {
-    src: "/images/baby6.jpg",
+    src: "/images/One.jpg",
     title: "One Year Journey",
   },
 ];
