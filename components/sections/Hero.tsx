@@ -445,7 +445,7 @@ export default function Hero() {
                         📅 September 05, 2026
                     </div>
 
-                    <div
+                    {/* <div
                         className="
               rounded-full
               border
@@ -460,7 +460,47 @@ export default function Hero() {
             "
                     >
                         🏠 At Home
-                    </div>
+                    </div> */}
+
+
+<a
+  href="https://maps.app.goo.gl/8Qa5VSEWgMmxPWPu5"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block"
+>
+  <div
+    className="
+      rounded-full
+      border
+      border-pink-200/50
+      bg-white/80
+      px-8
+      py-3
+      shadow-lg
+      backdrop-blur-md
+      font-body
+      text-lg
+      cursor-pointer
+      transition
+      hover:scale-105
+      hover:bg-white
+    "
+  >
+    🏠 At Home
+  </div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
                 </motion.div>
             </div>
         </section>

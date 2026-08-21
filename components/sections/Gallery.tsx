@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const photos = [
   {
-    src: "/images/baby1.jpg",
-    title: "Little Smile ❤️",
+    src: "/images/day.jpg",
+    title: "Beautiful Day",
   },
   {
     src: "/images/baby2.jpg",
@@ -14,7 +14,7 @@ const photos = [
   },
   {
     src: "/images/baby3.jpg",
-    title: "Beautiful Day",
+    title: "Little Smile ❤️",
   },
   {
     src: "/images/baby4.jpg",

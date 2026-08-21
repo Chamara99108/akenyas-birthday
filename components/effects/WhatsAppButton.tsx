@@ -12,7 +12,7 @@ export default function WhatsAppButton() {
 
     const message =
         "Hi \u2764\uFE0F\n\n" +
-        "We would like to join Akenya's 1st Birthday Celebration \uD83C\uDF82\n\n" +
+        "We would like to join Akenya's 1st Birthday Celebration  \uD83C\uDF82\n\n" +
         "Name:\n" +
         "Number of guests:\n\n" +
         "Thank you \u2764\uFE0F";

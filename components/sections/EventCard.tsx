@@ -42,7 +42,7 @@ export default function EventCard() {
 
           </div>
 
-          <div className="text-center">
+          {/* <div className="text-center">
 
             <MapPin className="mx-auto mb-3 text-rose-400" size={45} />
 
@@ -52,7 +52,25 @@ export default function EventCard() {
 
             </h3>
 
-          </div>
+          </div> */}
+
+
+          <div className="text-center">
+  <a
+    href="https://maps.app.goo.gl/8Qa5VSEWgMmxPWPu5"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mx-auto mb-3 block w-fit"
+    aria-label="Open location in Google Maps"
+  >
+    <MapPin
+      className="text-rose-400 transition-transform hover:scale-110"
+      size={45}
+    />
+  </a>
+
+  <h3>At Home</h3>
+</div>
 
         </div>
 
