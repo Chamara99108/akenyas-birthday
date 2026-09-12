@@ -57,7 +57,7 @@ export default function EventCard() {
 
           <div className="text-center">
   <a
-    href="https://maps.app.goo.gl/8Qa5VSEWgMmxPWPu5"
+    href=""
     target="_blank"
     rel="noopener noreferrer"
     className="mx-auto mb-3 block w-fit"

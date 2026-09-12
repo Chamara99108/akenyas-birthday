@@ -464,7 +464,7 @@ export default function Hero() {
 
 
 <a
-  href="https://maps.app.goo.gl/8Qa5VSEWgMmxPWPu5"
+  href=""
   target="_blank"
   rel="noopener noreferrer"
   className="inline-block"
